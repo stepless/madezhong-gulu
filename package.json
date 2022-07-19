@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/stepless/madezhong-gulu/issues"
   },
-  "homepage": "https://github.com/stepless/madezhong-gulu#readme"
+  "homepage": "https://github.com/stepless/madezhong-gulu#readme",
+  "dependencies": {
+    "vue": "^2.5.16"
+  }
 }
