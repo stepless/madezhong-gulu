@@ -6,7 +6,7 @@
 <script>
 
 </script>
-<style lng="scss" scoped>
+<style lang="scss" scoped>
 .g-button{
     font-size: var(--font-size);
     height: var(--button-height);
@@ -19,20 +19,18 @@
     justify-content: center;
     align-items: center;
     &:hover{
-        color: red;
+        border-color: var(--border-color-hover);
     }
-}
-.g-button:hover{
-    border-color: var(--border-color-hover);
-}
-.g-button:active{
-    background-color: var(--button-active-bg);
-}
-.g-button .icon{
+    &:active{
+        background-color: var(--button-active-bg);
+    }
+    .icon{
     order:1;
     margin-right: .1em;
     padding-bottom: .05em;
 }
+}
+
 .g-button .content{
     order:2;
     line-height: 1.2em;
