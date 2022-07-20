@@ -38,7 +38,7 @@ export default{
     &:active{
         background-color: var(--button-active-bg);
     }
-    .icon{
+    .g-icon{
         order:1;
         margin-right: .1em;
     }
@@ -46,7 +46,7 @@ export default{
         order:2;
         line-height: 1.2em;
     }
-    &.icon-right .icon{
+    &.icon-right .g-icon{
         order:2;
         margin-right: 0;
         margin-left: .1em;

@@ -1,5 +1,5 @@
 <template>
-    <svg v-if="icon" class="icon">
+    <svg v-if="icon" class="g-icon">
         <use :xlink:href="`#i-${icon}`"/>
     </svg>
 </template>
@@ -13,7 +13,7 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
-    .icon{
+    .g-icon{
         width: var(--font-size);
         height: var(--font-size);
         vertical-align: middle;
