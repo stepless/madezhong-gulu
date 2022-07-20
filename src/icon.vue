@@ -9,14 +9,13 @@ export default {
         icon:{
             type:String,
         }
-    },
-    data(){
-        return {
-
-        }
     }
 }
 </script>
 <style lang="scss" scoped>
-
+    .icon{
+        width: var(--font-size);
+        height: var(--font-size);
+        vertical-align: middle;
+    }
 </style>

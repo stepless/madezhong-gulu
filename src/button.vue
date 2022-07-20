@@ -1,11 +1,19 @@
 <template>
     <button class="g-button">
-        
-        <slot></slot>
+        <g-icon v-if="icon" :icon = 'icon'></g-icon>
+        <div class="content">
+            <slot></slot>
+        </div>
     </button>
 </template>
 <script>
-
+export default{
+    props:{
+        icon:{
+            type:String,
+        }
+    }
+}
 </script>
 <style lang="scss" scoped>
 .g-button{
@@ -26,24 +34,24 @@
         background-color: var(--button-active-bg);
     }
     .icon{
-    order:1;
-    margin-right: .1em;
-    padding-bottom: .05em;
-}
+        order:1;
+        margin-right: .1em;
+    }
+    .content{
+        order:2;
+        line-height: 1.2em;
+    }
+    &.icon-right .icon{
+        order:2;
+        margin-right: 0;
+        margin-left: .1em;
+    }
+    &.icon-right .content{
+        order:1;
+    }
 }
 
-.g-button .content{
-    order:2;
-    line-height: 1.2em;
-}
-.g-button.icon-right .icon{
-    order:2;
-    margin-right: 0;
-    margin-left: .1em;
-}
-.g-button.icon-right .content{
-    order:1;
-}
+
 @keyframes spin {
     0%{
         transform: rotate(0deg);
