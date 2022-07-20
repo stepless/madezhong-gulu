@@ -1,15 +1,11 @@
 <template>
-    <svg v-if="icon" class="g-icon">
-        <use :xlink:href="`#i-${icon}`"/>
+    <svg class="g-icon">
+        <use :xlink:href="`#i-${name}`"/>
     </svg>
 </template>
 <script>
 export default {
-    props:{
-        icon:{
-            type:String,
-        }
-    }
+    props:['name']
 }
 </script>
 <style lang="scss" scoped>
